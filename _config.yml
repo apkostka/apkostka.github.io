@@ -1,0 +1,58 @@
+# Site settings
+title: Andrew P. Kostka
+email: apkostka@gmail.com
+url: https://apkostka.github.io
+description: "Andrew P Kostka is a freelance Software Develoepr, speciailizing in front-end and full-stack web development using Angular, Laravel, React, Node, and more."
+keywords: "software web developer freelance engineer programmer angular laravel javascript php html css"
+skills: "Web Developer - User Experience Designer"
+meta_author: Kostka Andrew
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 50a2a7 #80B3FF
+  primary-rgb: "80,162,167" #"128,179,255"
+  secondary: 1c110a #FD6E8A
+  secondary-dark: 1c110a #A2122F
+
+# Footer settings
+footer:
+  copyright: Andrew Kostka
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: github
+    url: http://github.com/apkostka
+  - title: twitter
+    url: http://twitter.com/andrew_kostka
+  - title: stack-overflow
+    url: https://stackoverflow.com/story/apkostka
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Orange County, CA / Chiang Mai, Thailand
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
