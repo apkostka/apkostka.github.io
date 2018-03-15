@@ -1,6 +1,6 @@
 ---
 layout: default
-modal-id: 1
+modal-id: 2
 date: 2018-02-14
 img: sl70.com.png
 alt: SL70 Website
