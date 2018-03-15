@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 1
+date: 2018-02-14
+img: sl70.com.png
+alt: SL70 Website
+client: SL70 / Gunn Jerkens
+client_url: https://sl70.com
+description: I created this site from an existing design by an outside agency while working at Gunn Jerkens. While it runs on Wordpress, the custom theme uses a slew of modern tools.
+
+---
