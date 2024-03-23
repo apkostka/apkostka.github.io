@@ -1,0 +1,90 @@
+---
+layout: default
+---
+<div>
+  <div class="container py-6 md:py-10">
+  <div class="mx-auto max-w-4xl">
+    <div class="">
+      <h1
+        class="pt-5 font-body text-3xl font-semibold text-primary sm:text-4xl md:text-5xl xl:text-6xl"
+      >
+        {{ page.title }}
+      </h1>
+      <div class="flex items-center pt-5 md:pt-10">
+        <div>
+          <img
+            src="/assets/img/blog-author.jpg"
+            class="h-20 w-20 rounded-full border-2 border-grey-70 shadow"
+            alt="author image"
+          />
+        </div>
+        <div class="pl-5">
+          <span class="block font-body text-xl font-bold text-grey-10"
+            >By {{ page.author }}</span
+          >
+          <span class="block pt-1 font-body text-xl font-bold text-grey-30"
+            >{{ page.date | date_to_string }}</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="prose max-w-none pt-8">
+      {{content}}
+    </div>
+    <!-- Disable tags for now
+    <div class="flex pt-10">
+      {% for tag in page.tags %}
+      <a
+        href="/"
+        class="rounded-xl bg-primary px-4 py-1 font-body font-bold text-white hover:bg-grey-20"
+        >{{ tag.text }}</a
+      >
+      {% endfor %}
+    </div>
+    -->
+    <!-- Disable next and previous for now
+    <div class="mt-10 flex justify-between border-t border-lila py-12">
+      <a href="/" class="flex items-center">
+        <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
+        <span
+          class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5"
+          >Previous Post</span
+        >
+      </a>
+      <a href="/" class="flex items-center">
+        <span
+          class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5"
+          >Next Post</span
+        >
+        <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+      </a>
+    </div>
+    -->
+    <div
+      class="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20"
+    >
+      <div class="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
+        <img
+          src="/assets/img/blog-author.jpg"
+          class="rounded-full shadow"
+          alt="author image"
+        />
+      </div>
+      <div class="ml-0 text-center md:ml-10 md:w-5/6 md:text-left">
+        <h3 class="pt-10 font-body text-2xl font-bold text-secondary md:pt-0">
+          {{ page.author }}
+        </h3>
+        <p
+          class="pt-5 font-body text-lg leading-8 text-secondary sm:leading-9 md:text-xl md:leading-9 lg:leading-9 xl:leading-9"
+        >
+          {{ site.description }}
+
+        </p>
+        <div class="flex items-center justify-center pt-5 md:justify-start">
+          {% include social-links.html color="primary" hover="primary" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

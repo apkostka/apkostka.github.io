@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body
+    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+    class="relative"
+    x-data="{ mobileMenu: false }"
+  >
+    <div id="main" class="relative">
+      <div
+        x-data="{
+        triggerNavItem(id) {
+        $scroll(id)
+        },
+        triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+        }
+        }"
+      >
+        {% include menu.html %}
+        {{ content }}
+        <!--{% include subscribe.html %}-->
+        {% include footer.html %}
+      </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+
+  </body>
+</html>
