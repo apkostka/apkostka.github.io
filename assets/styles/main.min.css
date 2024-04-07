@@ -2571,20 +2571,12 @@ html {
     width: 9rem;
   }
 
-  .xl\:w-64 {
-    width: 16rem;
-  }
-
-  .xl\:w-5 {
-    width: 1.25rem;
+  .xl\:w-52 {
+    width: 13rem;
   }
 
   .xl\:w-56 {
     width: 14rem;
-  }
-
-  .xl\:w-52 {
-    width: 13rem;
   }
 
   .xl\:grid-cols-4 {
