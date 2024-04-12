@@ -1,5 +1,5 @@
 {% for link in site.social %}
-<a href="{{ link.url }}" target="_blank" class="pl-4">
+<a href="{{ link.url }}" target="_blank" class="pl-4" aria-label="{{link.title}}">
 <i
   class="bx bxl-{{ link.title }} text-2xl text-{{ include.color }} hover:text-{{ include.hover }}"
   ></i>
